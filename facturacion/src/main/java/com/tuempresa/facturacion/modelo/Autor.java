@@ -12,7 +12,7 @@ import lombok.*;
 @Getter @Setter
 public class Autor extends Identificable{
 	
-	@Column(length=50)
+	@Column(length=51)
 	String nombre;
 	
 	@OneToMany(mappedBy="autor", cascade=CascadeType.REMOVE)
